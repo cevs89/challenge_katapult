@@ -64,12 +64,12 @@ URL Admin: http://localhost:8000/admin/
 
 You have to use the following credentials
 
-| user        | password      |
-| ------------| --------------|
-| katapult    | katapult123   |
+| user                  | password      |
+| ----------------------| --------------|
+| katapult@example.com  | katapult123   |
 
 
-This command `build`, `migrations` and will run the `server`, if you want to development
+This command `build`, `migrations`, `load` and will run the `server`, if you want to development
 in docker environment
 
 **Comment:**
@@ -77,6 +77,15 @@ in docker environment
 Sometimes you need to run the command with `sudo` in that way you has to run the follows command:
 
 `sudo ./katapult.sh runserver`
+
+
+## Documentation API
+
+Custom Docs (**Recommended**): [https://github.com/cevs89/challenge_katapult/wiki](https://github.com/cevs89/challenge_katapult/wiki)
+
+Auto Docs by Schema swagger: [http://localhost:8000/docs/](http://localhost:8000/docs/)
+
+
 
 ## Access to admin Django
 
@@ -95,9 +104,9 @@ URL Admin: http://localhost:8000/admin/
 
 ### 3.- How to run linters?
 There are 3 types of linters:
-* **Black:** Which formats the python code to black style: `black api/`
-* **Flake8:** which analyze code: `flake8 api/`
-* **Isort:** isort your imports, so you don't have to: `isort api/ --profile black`
+* **Black:** Which formats the python code to black style: `black applications/`
+* **Flake8:** which analyze code: `flake8 applications/`
+* **Isort:** isort your imports, so you don't have to: `isort applications/ --profile black`
 
 ### 4.- You can also run all linters as follows:
 

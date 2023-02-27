@@ -1,18 +1,17 @@
 [
   {
-    "model": "auth.user",
+    "model": "applications_accounts.user",
     "pk": 1,
     "fields": {
-      "password": "pbkdf2_sha256$390000$0fOApF3ecKqOrOXAa8rhWS$VFIYGviwJqm8+Ty/sfQ9rzizvV9mWixYSIq5lm+W6sM=",
-      "last_login": null,
+      "password": "pbkdf2_sha256$390000$dj5ypFmZZFCbepn5icxjUG$MJe3NrXtSArsP6yEklZA/naC1zDlDtFizRnk6VcGjhA=",
+      "last_login": "2023-02-27T18:53:51.959Z",
       "is_superuser": true,
-      "username": "katapult",
       "first_name": "",
       "last_name": "",
-      "email": "katapult@example.com",
       "is_staff": true,
       "is_active": true,
-      "date_joined": "2023-02-27T16:34:04.860Z",
+      "date_joined": "2023-02-27T18:53:21.925Z",
+      "email": "katapult@example.com",
       "groups": [],
       "user_permissions": []
     }
