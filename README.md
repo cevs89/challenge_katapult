@@ -28,6 +28,60 @@ CRUD in API Rest and Paginations for index response
 
 `python manage.py migrate`
 
+**5.- load User Admin**
+
+`python manage.py loaddata fixtures/user_admin.json`
+
+
+**6.- Run local server**
+
+`python manage.py runserver`
+
+**Comment:**
+
+> If you connect like this, it's just for development and you will have a sqlite3 DB
+
+
+## Docker | Run server
+> You has to have installed  `docker` and `docker-compose`
+>
+> Docker: https://docs.docker.com/engine/install/ubuntu/
+>
+> Docker-compose: https://docs.docker.com/compose/install/
+
+
+**Run the command**
+
+>If you need to deploy through Docker I did development a script in bash for make this easier
+
+`./katapult.sh runserver`
+
+
+## Access to admin Django
+
+URL Admin: http://localhost:8000/admin/
+
+
+You have to use the following credentials
+
+| user        | password      |
+| ------------| --------------|
+| katapult    | katapult123   |
+
+
+This command `build`, `migrations` and will run the `server`, if you want to development
+in docker environment
+
+**Comment:**
+
+Sometimes you need to run the command with `sudo` in that way you has to run the follows command:
+
+`sudo ./katapult.sh runserver`
+
+## Access to admin Django
+
+URL Admin: http://localhost:8000/admin/
+
 
 ## Install this if you need to development
 > Before you has to install Virtual Enviroment
