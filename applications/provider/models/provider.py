@@ -23,6 +23,7 @@ class Provider(BaseModel):
     name_provider = models.CharField(
         max_length=255,
         null=False,
+        unique=True,
     )
     nit_provider = models.CharField(
         max_length=11, null=False, unique=True, validators=[validate_nit]
