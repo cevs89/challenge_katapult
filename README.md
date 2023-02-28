@@ -56,6 +56,28 @@ CRUD in API Rest and Paginations for index response
 
 `./katapult.sh runserver`
 
+This command `build`, `migrations`, `load` and will run the `server`, if you want to development
+in docker environment
+
+**Comment:**
+
+Sometimes you need to run the command with `sudo` in that way you has to run the follows command:
+
+`sudo ./katapult.sh runserver`
+
+Also you can use others command available::
+
+```
+> ./katapult.sh help
+
+katapult.sh commands:
+  runserver: run the development stack
+  loaduser: loaddata to user Model
+  migrate: run migrate to DB
+  run: Just run de server
+
+```
+
 
 ## Access to admin Django
 
@@ -67,16 +89,6 @@ You have to use the following credentials
 | user                  | password      |
 | ----------------------| --------------|
 | katapult@example.com  | katapult123   |
-
-
-This command `build`, `migrations`, `load` and will run the `server`, if you want to development
-in docker environment
-
-**Comment:**
-
-Sometimes you need to run the command with `sudo` in that way you has to run the follows command:
-
-`sudo ./katapult.sh runserver`
 
 
 ## Documentation API
@@ -107,6 +119,7 @@ There are 3 types of linters:
 * `pre-commit run --all-files`
 
 Details before run
+
 ```
 Check Yaml...............................................................Passed
 Fix End of Files.........................................................Passed
@@ -114,3 +127,9 @@ Trim Trailing Whitespace.................................................Passed
 black....................................................................Passed
 flake8...................................................................Passed
 isort....................................................................Passed
+
+```
+
+### 5.- Run test
+
+`python manage.py test`

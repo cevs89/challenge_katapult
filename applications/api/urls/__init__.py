@@ -6,4 +6,8 @@ urlpatterns = [
         "accounts/",
         include("applications.api.urls.register_user"),
     ),
+    path(
+        "",
+        include("applications.api.urls.banks"),
+    ),
 ]
