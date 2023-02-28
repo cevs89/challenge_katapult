@@ -1,6 +1,8 @@
+from django.core.exceptions import ValidationError
 from django.db import models
 
 from applications.core.models import BaseModel
+from applications.utils.functions import normalize_frase
 
 
 class Banks(BaseModel):
@@ -16,6 +18,17 @@ class Banks(BaseModel):
     """
 
     name_bank = models.CharField(max_length=50, null=False, unique=True)
+
+    def save(self, *args, **kwargs):
+        """
+        Nomalize lower string into the name
+        """
+        try:
+            self.name_bank = normalize_frase(self.name_bank)
+        except Exception as e:
+            raise ValidationError(str(e))
+
+        return super(Banks, self).save(*args, **kwargs)
 
     class Meta:
         verbose_name = "Bank"

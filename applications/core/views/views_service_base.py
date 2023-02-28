@@ -53,7 +53,7 @@ class BaseService:
                 _save_bank.save()
         except (Exception, IntegrityError) as e:
             _msg_erros_save = _("Already Exists")
-            if "UNIQUE" in e.args[0]:
+            if "unique" in e.args[0].lower():
                 raise ValueError(
                     {"name_bank": f"{_msg_erros_save}: {self.name_normalize}"}
                 )
