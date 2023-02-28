@@ -1,7 +1,8 @@
+from django.core.exceptions import ValidationError
 from django.db import models
 
+from applications.core.models import BaseModel
 from applications.utils.functions import validate_nit
-from applications.utils.models import BaseModel
 
 
 class Provider(BaseModel):
@@ -36,6 +37,14 @@ class Provider(BaseModel):
         on_delete=models.CASCADE,
         related_name="banks_provider_related",
     )
+
+    def save(self, *args, **kwargs):
+        try:
+            validate_nit(self.nit_provider)
+        except Exception as e:
+            raise ValidationError(str(e))
+
+        return super(Provider, self).save(*args, **kwargs)
 
     class Meta:
         verbose_name = "Provider"

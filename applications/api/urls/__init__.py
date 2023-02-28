@@ -10,4 +10,8 @@ urlpatterns = [
         "",
         include("applications.api.urls.banks"),
     ),
+    path(
+        "",
+        include("applications.api.urls.providers"),
+    ),
 ]

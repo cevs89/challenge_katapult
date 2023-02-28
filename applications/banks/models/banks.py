@@ -1,6 +1,6 @@
 from django.db import models
 
-from applications.utils.models import BaseModel
+from applications.core.models import BaseModel
 
 
 class Banks(BaseModel):
