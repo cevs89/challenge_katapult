@@ -14,6 +14,13 @@ CRUD in API Rest and Paginations for index response
 >
 > Docker-compose: https://docs.docker.com/compose/install/
 
+**Comment**
+This project it was created with:
+
+* SOLID Concept
+* Abstraction
+* TDD
+* POO
 
 **Run the command**
 

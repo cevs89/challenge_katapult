@@ -14,4 +14,8 @@ urlpatterns = [
         "",
         include("applications.api.urls.providers"),
     ),
+    path(
+        "dashboard/",
+        include("applications.api.urls.dasboard"),
+    ),
 ]

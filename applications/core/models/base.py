@@ -14,6 +14,12 @@ class BaseModel(models.Model):
         is_active: Todos los registro dentro de una DB deben manejar estados
         created_at: Fecha de creacion, solo se modifica su unica vez cuando se crea
         modified_at: Fecha de modificacion, se modificacion siempre que se actualice el modelo
+
+    Comment:
+        i thoung in some point made relations with User(),
+        maybe if you want to find some records for a specific user.
+
+        But it's doesn't a requirement in the file
     """
 
     uuid = models.UUIDField(
@@ -25,7 +31,6 @@ class BaseModel(models.Model):
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     modified_at = models.DateTimeField(auto_now=True)
-
     """ abstract allow extend the models and inmerse in others """
 
     class Meta:
