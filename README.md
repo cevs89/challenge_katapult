@@ -86,12 +86,6 @@ Custom Docs (**Recommended**): [https://github.com/cevs89/challenge_katapult/wik
 Auto Docs by Schema swagger: [http://localhost:8000/docs/](http://localhost:8000/docs/)
 
 
-
-## Access to admin Django
-
-URL Admin: http://localhost:8000/admin/
-
-
 ## Install this if you need to development
 > Before you has to install Virtual Enviroment
 
