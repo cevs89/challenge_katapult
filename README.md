@@ -7,41 +7,6 @@ CRUD in API Rest and Paginations for index response
 ## Python Version
 `>=3.8`
 
-
-## Virtual Enviroment | Run server
-> You has to have installed  `virtualenv` and `pip`
-
-**1.- Initial your virtualenv**
-
-`virtualenv <path> --python=python3.8`
-
-**2.- Active your virtualenv**
-
-`source <path>/bin/activate`
-
-**3.- Install Dependency**
-
-`pip install -r requirements/base.txt`
-
-
-**4.- Install Migrations**
-
-`python manage.py migrate`
-
-**5.- load User Admin**
-
-`python manage.py loaddata fixtures/user_admin.json`
-
-
-**6.- Run local server**
-
-`python manage.py runserver`
-
-**Comment:**
-
-> If you connect like this, it's just for development and you will have a sqlite3 DB
-
-
 ## Docker | Run server
 > You has to have installed  `docker` and `docker-compose`
 >
@@ -77,6 +42,40 @@ katapult.sh commands:
   run: Just run de server
 
 ```
+
+
+## Virtual Enviroment | Run server
+> You has to have installed  `virtualenv` and `pip`
+
+**1.- Initial your virtualenv**
+
+`virtualenv <path> --python=python3.8`
+
+**2.- Active your virtualenv**
+
+`source <path>/bin/activate`
+
+**3.- Install Dependency**
+
+`pip install -r requirements/base.txt`
+
+
+**4.- Install Migrations**
+
+`python manage.py migrate`
+
+**5.- load User Admin**
+
+`python manage.py loaddata fixtures/user_admin.json`
+
+
+**6.- Run local server**
+
+`python manage.py runserver`
+
+**Comment:**
+
+> If you connect like this, it's just for development and you will have a sqlite3 DB
 
 
 ## Access to admin Django
