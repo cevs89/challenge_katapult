@@ -30,5 +30,5 @@ class DashboardView(APIView):
     def get(self, request) -> Response:
         self._count_statistics()
         return Response(
-            {"statistics": self.context_response}, status=status.HTTP_400_BAD_REQUEST
+            {"statistics": self.context_response}, status=status.HTTP_200_OK
         )

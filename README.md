@@ -101,6 +101,8 @@ You have to use the following credentials
 
 Custom Docs (**Recommended**): [https://github.com/cevs89/challenge_katapult/wiki](https://github.com/cevs89/challenge_katapult/wiki)
 
+Collections Postman: `docs/KatapultDocs.postman_collection.json`
+
 Auto Docs by Schema swagger: [http://localhost:8000/docs/](http://localhost:8000/docs/)
 
 
